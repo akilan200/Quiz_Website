@@ -1,105 +1,127 @@
-# Online Examination System
+# 🎓 Quiz Website
 
-A web-based examination system that allows students to take MCQ tests and administrators to manage questions and view results.
+A simple, interactive quiz web app built with HTML, CSS, and JavaScript. Ideal for learning, testing knowledge, or using as a portfolio project.
 
-## Features
+---
 
-- Student Login with name and roll number
-- Admin Login with username and password
-- Student Dashboard with test access
-- MCQ Test with auto-submit functionality
-- Admin Dashboard with student results
-- Question Management (Add, Edit, Delete)
-- Score Export to Excel
+## 🔍 Table of Contents
+- [About](#about)
+- [Features](#features)
+- [Tech Stack](#tech-stack)
+- [Demo](#demo)
+- [Setup & Installation](#setup--installation)
+- [Usage](#usage)
+- [Project Structure](#project-structure)
+- [Contributing](#contributing)
+- [License](#license)
+- [Contact](#contact)
 
-## Requirements
+---
 
-- PHP 7.4 or higher
-- MySQL 5.7 or higher
-- Web server (Apache/Nginx)
+## 📝 About
 
-## Installation
+This project demonstrates a client-side quiz application that:
+- Loads quiz questions dynamically
+- Tracks user answers and score
+- Provides real-time feedback
+- Can be extended with new quizzes easily
 
-1. Clone the repository to your web server directory
-2. Create a MySQL database and import the schema:
+Great for beginners looking to practice JavaScript DOM manipulation, event handling, and state management.
+
+---
+
+## ⚙️ Features
+
+- Multiple-choice quizzes  
+- Immediate indication of correct/incorrect answers  
+- Score tracking and display at the end  
+- Restart capability  
+- Responsive design (works on mobile and desktop)
+
+---
+
+## 🛠️ Tech Stack
+
+- **HTML5** – Semantic markup  
+- **CSS3** – Flexbox layout, responsive design  
+- **JavaScript (ES6+)** – DOM manipulation & logic  
+- No external frameworks – pure vanilla JS
+
+---
+
+## 🎥 Demo
+
+![Quiz Demo](assets/demo.gif)
+
+_Replace with an actual GIF or screenshot of your app in action._
+
+---
+
+## 🚀 Setup & Installation
+
+1. **Clone the repository**  
    ```bash
-   mysql -u root -p < database.sql
-   ```
-3. Configure the database connection in `includes/db.php`:
-   ```php
-   $host = 'localhost';
-   $dbname = 'online_exam';
-   $username = 'your_username';
-   $password = 'your_password';
+   git clone https://github.com/akilan200/Quiz_Website.git
+   cd Quiz_Website
    ```
 
-## Default Admin Account
+2. **Open index.html in your browser**  
+   Or serve using a local server:
+   ```bash
+   # Option 1: Using Python
+   python3 -m http.server
 
-- Username: admin
-- Password: admin123
+   # Option 2: Using Node.js
+   npx http-server
+   ```
 
-## Usage
+---
 
-### For Students
+## 📚 Usage
 
-1. Access the system through your web browser
-2. Login with your name and roll number
-3. Click "Start Test" to begin the examination
-4. Answer all questions (MCQ format)
-5. Test will auto-submit when all questions are answered or time runs out
-6. View your score after submission
+1. Start the quiz by loading the page  
+2. Choose one of the options per question  
+3. Get instant feedback (correct or incorrect)  
+4. View score at the end and retry if desired
 
-### For Administrators
+---
 
-1. Login with admin credentials
-2. View all students and their test results
-3. Manage questions (add, edit, delete)
-4. Export student scores to Excel
-5. Monitor test progress and results
-
-## Security Features
-
-- Session-based authentication
-- Password hashing for admin accounts
-- SQL injection prevention using prepared statements
-- XSS prevention using htmlspecialchars
-- CSRF protection through session tokens
-
-## File Structure
+## 🗂️ Project Structure
 
 ```
-/project-root
-│
-├── index.html           # Login selection
-├── student_login.php    # Student login handler
-├── admin_login.php      # Admin login handler
-├── student_dashboard.php # Student dashboard
-├── test.php            # Test interface
-├── submit_test.php     # Test submission handler
-├── admin_dashboard.php  # Admin dashboard
-├── edit_questions.php  # Question management
-├── export_scores.php   # Score export
-├── logout.php          # Logout handler
-│
-├── /css
-│   └── styles.css      # Stylesheet
-│
-├── /js
-│   └── scripts.js      # JavaScript functions
-│
-└── /includes
-    ├── db.php          # Database connection
-    └── auth.php        # Authentication functions
+Quiz_Website/
+├── index.html           # Main HTML file
+├── styles.css           # CSS styles
+├── script.js            # JavaScript quiz logic
+├── assets/              # Images and demo files
+├── data/                # JSON file for questions (optional)
+└── README.md            # Documentation
 ```
 
-## Contributing
+---
 
-1. Fork the repository
-2. Create your feature branch
-3. Commit your changes
-4. Push to the branch
-5. Create a new Pull Request
+## 🤝 Contributing
 
-## License
+Contributions are welcome!
 
-This project is licensed under the MIT License - see the LICENSE file for details. 
+1. Fork the repository  
+2. Create a feature branch (`git checkout -b feature/YourFeature`)  
+3. Commit your changes (`git commit -m 'Add feature'`)  
+4. Push to GitHub (`git push origin feature/YourFeature`)  
+5. Open a Pull Request
+
+---
+
+## 📄 License
+
+This project is licensed under the **MIT License**. See the [LICENSE](LICENSE) file for more details.
+
+---
+
+## 📬 Contact
+
+- **Author**: [akilan200](https://github.com/akilan200)  
+- **Email**: akilanlh2004@gmail.com
+
+---
+
