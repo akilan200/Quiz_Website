@@ -49,14 +49,6 @@ Great for beginners looking to practice JavaScript DOM manipulation, event handl
 
 ---
 
-## 🎥 Demo
-
-![Quiz Demo](assets/demo.gif)
-
-_Replace with an actual GIF or screenshot of your app in action._
-
----
-
 ## 🚀 Setup & Installation
 
 1. **Clone the repository**  
